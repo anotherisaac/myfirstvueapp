@@ -1,7 +1,8 @@
 <template lang="pug">
   #app
     //pug format by html2jade.org NOTA: Considerar a futuro que NO es lo mismo el npm run dev al npm run build. Cuando se sube a Git, el proyecto requiere la carpeta dist porque en dev es virtual. (Llevar proyecto a produccion) HAY QUE QUITAR LA CARPETA DIST DEL GITIGNORE//
-    img(src='./assets/logo.png') 
+    //img(src='./assets/logo.png') DEVELOPMENT//
+    img(src='https://anotherisaac.github.io/myfirstvueapp/dist/logo.png')
     h1 Top Artists by country
     select(v-model="selectedCountry")
       option(v-for="country in countries" v-bind:value="country.value") {{country.name}}
